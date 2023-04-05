@@ -144,10 +144,10 @@ function luhn(idNum) {
     var String1 = "";
     var String2 = "";
 
-    for (var = i idNum.length - 1; i >= 0; i-= 2) {
+    for (var i = idNum.length - 1; i >= 0; i-= 2) {
         String1 += idNum.charAt(i);
     }
-    for (var = i idNum.length - 2; i >= 0; i-= 2) {
+    for (var i = idNum.length - 2; i >= 0; i-= 2) {
         String2 += 2*idNum.charAt(i);
     }
     return sumDigits(String1 + String2) % 10 === 0;
